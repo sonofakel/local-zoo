@@ -6,7 +6,7 @@ import { Animal } from './animal.model';
   selector: 'animal-details',
   template: `
   <div class="card" *ngIf="animalDetailsSelectedAnimal">
-    <div class="card-block">
+    <div class="card-block ">
         <button class="ma2 fr back-button" (click)="backButton()"><i class="fa fa-times" aria-hidden="true"></i>
 </button>
         <h1 class="tc">{{animalDetailsSelectedAnimal.name}}'s Details</h1>
