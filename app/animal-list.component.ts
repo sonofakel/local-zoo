@@ -9,6 +9,7 @@ import { Animal } from './animal.model';
       <button class="btn btn-default grow" (click)="filterByAge('young')">Young Animals</button>
       <button class="btn btn-default grow" (click)="filterByAge('all')">All Animals</button>
     </div>
+
     <div class="card" *ngFor="let currentAnimal of childAnimalList | age:filterByAgeOption">
       <div class="card-block">
         <button class="edit-button"(click)="editButtonHasBeenClicked(currentAnimal)"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></button>
