@@ -15,9 +15,9 @@ import { Animal } from './animal.model';
         <button class="edit-button"(click)="editButtonHasBeenClicked(currentAnimal)"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></button>
         <button class="details-button" (click)="detailsButtonHasBeenClicked(currentAnimal)"><i class="fa fa-signal fa-lg" aria-hidden="true"></i></button>
         <button class="delete-button" (click)="deleteButtonHasBeenClicked(currentAnimal)"><i class="fa fa-times" aria-hidden="true"></i></button>
-        <h4 class="card-title">{{currentAnimal.name}}</h4>
+        <h1 class="card-title">{{currentAnimal.name}}</h1>
         <h6 class="card-subtitle mb-2 text-muted">{{currentAnimal.species}}</h6>
-        <h5 class="card-text">{{currentAnimal.age}}</h5>
+        <h5 class="card-text">Age: {{currentAnimal.age}}</h5>
       </div>
     </div>
   `

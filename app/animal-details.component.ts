@@ -5,25 +5,22 @@ import { Animal } from './animal.model';
 @Component({
   selector: 'animal-details',
   template: `
-  <div class="pt4 fixed card" *ngIf="animalDetailsSelectedAnimal">
+  <div class="card" *ngIf="animalDetailsSelectedAnimal">
     <div class="card-block">
-    <div class="row">
-      <div class="animal-level">
         <button class="ma2 fr back-button" (click)="backButton()"><i class="fa fa-times" aria-hidden="true"></i>
 </button>
-        <h4 class="tc">{{animalDetailsSelectedAnimal.name}}</h4>
-        <h5 class="tc">{{animalDetailsSelectedAnimal.species}}</h5>
-        <h5 class="tc">{{animalDetailsSelectedAnimal.age}}</h5>
-        <h5 class="tc">{{animalDetailsSelectedAnimal.diet}}</h5>
-        <h5 class="tc">{{animalDetailsSelectedAnimal.location}}</h5>
-        <h5 class="tc">{{animalDetailsSelectedAnimal.caretakers}}</h5>
-        <h5 class="tc">{{animalDetailsSelectedAnimal.sex}}</h5>
-        <h5 class="tc">{{animalDetailsSelectedAnimal.likes}}</h5>
-        <h5 class="tc">{{animalDetailsSelectedAnimal.dislikes}}</h5>
+        <h1 class="tc">{{animalDetailsSelectedAnimal.name}}'s Details</h1>
+        <h5 class="tc">Species: {{animalDetailsSelectedAnimal.species}}</h5>
+        <h5 class="tc">Age: {{animalDetailsSelectedAnimal.age}}</h5>
+        <h5 class="tc">Diet: {{animalDetailsSelectedAnimal.diet}}</h5>
+        <h5 class="tc">Location: {{animalDetailsSelectedAnimal.location}}</h5>
+        <h5 class="tc">Caretakers: {{animalDetailsSelectedAnimal.caretakers}}</h5>
+        <h5 class="tc">Sex: {{animalDetailsSelectedAnimal.sex}}</h5>
+        <h5 class="tc">Likes: {{animalDetailsSelectedAnimal.likes}}</h5>
+        <h5 class="tc">Dislikes: {{animalDetailsSelectedAnimal.dislikes}}</h5>
       </div>
     </div>
-  </div>
-  </div>
+
   `
 })
 
